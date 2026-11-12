@@ -7,6 +7,7 @@ name = "arthon"
 version = "1.0.0"
 description = "Multi-agent quantitative stock research for Indian (NSE/BSE) and global equities — transparent agents, cost-aware backtesting, walk-forward forecast evaluation. Educational research, not financial advice."
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
 authors = [
     { name = "Ayush Shukla" },

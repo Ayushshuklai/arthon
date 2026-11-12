@@ -17,6 +17,12 @@ Built by Ayush Shukla with eider (Muse). The *idea* of a multi-agent
 research team was inspired by TradingAgents, Kronos and ai-hedge-fund from
 the author's starred collection; all code in this repository is original.
 
+![NIFTY forecast cone](docs/images/nifty_cone.png)
+
+*The pattern engine on NIFTY: a historical-analogue forecast cone — the range
+of paths that similar past patterns actually took, not a single line of false
+precision.*
+
 ## The team
 
 | Agent | Job | Method |
@@ -38,13 +44,12 @@ cost per position change, Sharpe, Sortino, drawdown) and **watchlist mode**
 ```bash
 git clone https://github.com/Ayushshuklai/arthon.git
 cd arthon
-pip install -r requirements.txt
+pip install .
 
-cd src
-python -m arthon.cli RELIANCE.NS              # NSE (INR)
-python -m arthon.cli TCS.NS --years 5
-python -m arthon.cli AAPL                     # US tickers work too
-python -m arthon.cli --watchlist RELIANCE.NS,TCS.NS,MRF.NS,MAZDOCK.NS
+arthon RELIANCE.NS              # NSE (INR)
+arthon TCS.NS --years 5
+arthon AAPL                     # US tickers work too
+arthon --watchlist RELIANCE.NS,TCS.NS,MRF.NS,MAZDOCK.NS
 ```
 
 No API key is needed. Data comes from Yahoo Finance's public chart API
@@ -91,10 +96,12 @@ CI runs the same suite on every push (`.github/workflows/tests.yml`).
 
 ```
 src/arthon/  data.py indicators.py agents.py evaluation.py
-                     backtest.py report.py cli.py
-docs/                ARCHITECTURE.md, DATA_SOURCES.md
-reports/             six reviewed sample reports
+                     backtest.py costs.py pattern_ai.py strategies.py
+                     report.py cli.py
+docs/                ARCHITECTURE.md, DATA_SOURCES.md, images/
+reports/             13 reviewed sample reports + strategy backtest outputs
 tests/               unit tests for critical calculations
+tradingview/         arthon.pine — Pine Script twin of the EMA agents
 ```
 
 ## Roadmap
@@ -104,5 +111,4 @@ a news/sentiment agent, and an LLM debate layer: [`ROADMAP.md`](ROADMAP.md)
 
 ## Licence
 
-Not yet licensed — all rights reserved by the author until a licence is
-chosen (see ROADMAP). Code is public for reading and learning.
+MIT — see [`LICENSE`](LICENSE). Read it, learn from it, build on it.
