@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+data/cache/*.csv
+*.log
+.DS_Store
+
+build/
+*.egg-info/
+dist/
+
+# Internal planning docs — not published
+LAUNCH_PLAN.md

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arthon"
+version = "1.0.0"
+description = "Multi-agent quantitative stock research for Indian (NSE/BSE) and global equities — transparent agents, cost-aware backtesting, walk-forward forecast evaluation. Educational research, not financial advice."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Ayush Shukla" },
+]
+keywords = ["quantitative-finance", "multi-agent", "backtesting", "nse", "bse", "stock-research"]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+]
+
+[project.scripts]
+arthon = "arthon.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Ayushshuklai/arthon"
+
+[tool.setuptools.packages.find]
+where = ["src"]
