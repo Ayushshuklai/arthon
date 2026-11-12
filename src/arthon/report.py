@@ -13,7 +13,7 @@ def _section(o: Opinion) -> list[str]:
 
 def build_report(symbol: str, meta: dict, opinions: list[Opinion], decision: Opinion,
                  backtest: dict, forecast_eval: dict) -> str:
-    L = [f"# Finance AI — Analysis Report: {symbol}", "",
+    L = [f"# Arthon — Analysis Report: {symbol}", "",
          f"- **Analysis date:** {meta['analysis_date']}",
          f"- **Data range:** {meta['data_range']} ({meta['sessions']} sessions)",
          f"- **Data source:** Yahoo Finance public chart API ({meta['currency_note']}); benchmark: {meta['benchmark']}",
