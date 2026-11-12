@@ -1,4 +1,4 @@
-# Finance AI — Analysis Report: HDFCBANK.NS
+# Arthon — Analysis Report: HDFCBANK.NS
 
 - **Analysis date:** 2026-10-30
 - **Data range:** 2021-11-01 to 2026-10-29 (1235 sessions)
