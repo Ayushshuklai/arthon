@@ -1,0 +1,72 @@
+[
+ {
+  "asset": "^NSEI",
+  "profile": "india_index_futures",
+  "house_realistic_pct": 10.6,
+  "house_flat20_pct": -11.7,
+  "buyhold_pct": 27.4,
+  "user_realistic_pct": 5.8,
+  "user_flat20_pct": 1.3,
+  "user_trades": 14
+ },
+ {
+  "asset": "RELIANCE.NS",
+  "profile": "india_equity_delivery",
+  "house_realistic_pct": 11.4,
+  "house_flat20_pct": -1.0,
+  "buyhold_pct": 3.8,
+  "user_realistic_pct": -7.4,
+  "user_flat20_pct": -9.0,
+  "user_trades": 10
+ },
+ {
+  "asset": "HDFCBANK.NS",
+  "profile": "india_equity_delivery",
+  "house_realistic_pct": -29.0,
+  "house_flat20_pct": -37.2,
+  "buyhold_pct": -12.3,
+  "user_realistic_pct": -10.7,
+  "user_flat20_pct": -13.2,
+  "user_trades": 16
+ },
+ {
+  "asset": "MAZDOCK.NS",
+  "profile": "india_equity_delivery",
+  "house_realistic_pct": 202.9,
+  "house_flat20_pct": 168.9,
+  "buyhold_pct": 1158.6,
+  "user_realistic_pct": 24.0,
+  "user_flat20_pct": 20.7,
+  "user_trades": 15
+ },
+ {
+  "asset": "BAJFINANCE.NS",
+  "profile": "india_equity_delivery",
+  "house_realistic_pct": -30.2,
+  "house_flat20_pct": -38.6,
+  "buyhold_pct": 21.4,
+  "user_realistic_pct": -0.5,
+  "user_flat20_pct": -2.6,
+  "user_trades": 12
+ },
+ {
+  "asset": "BTC-USD",
+  "profile": "crypto_india_exchange",
+  "house_realistic_pct": 27.6,
+  "house_flat20_pct": 27.6,
+  "buyhold_pct": 66.2,
+  "user_realistic_pct": 56.4,
+  "user_flat20_pct": 56.4,
+  "user_trades": 14
+ },
+ {
+  "asset": "GC=F",
+  "profile": "futures_generic",
+  "house_realistic_pct": 116.2,
+  "house_flat20_pct": 75.0,
+  "buyhold_pct": 115.9,
+  "user_realistic_pct": 3.6,
+  "user_flat20_pct": -2.2,
+  "user_trades": 18
+ }
+]
