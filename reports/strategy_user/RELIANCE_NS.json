@@ -1,0 +1,107 @@
+{
+ "period": "2021-11-01 to 2026-10-29",
+ "trades": 10,
+ "win_rate_pct": 30.0,
+ "time_in_market_pct": 8.7,
+ "strategy_after_costs": {
+  "total_return_pct": -9.0,
+  "cagr_pct": -1.9,
+  "sharpe": -0.28,
+  "sortino": -0.14,
+  "max_drawdown_pct": -16.8
+ },
+ "trade_log": [
+  {
+   "entry_date": "2021-11-15",
+   "entry": 1199.9,
+   "exit_date": "2021-11-16",
+   "exit": 1170.79,
+   "return_pct": -2.83,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1170.79
+  },
+  {
+   "entry_date": "2022-05-31",
+   "entry": 1219.01,
+   "exit_date": "2022-06-13",
+   "exit": 1240.35,
+   "return_pct": 1.35,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1160.35
+  },
+  {
+   "entry_date": "2022-08-03",
+   "entry": 1199.9,
+   "exit_date": "2022-08-29",
+   "exit": 1191.89,
+   "return_pct": -1.07,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1161.89
+  },
+  {
+   "entry_date": "2022-10-31",
+   "entry": 1172.67,
+   "exit_date": "2022-11-01",
+   "exit": 1159.06,
+   "return_pct": -1.56,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1159.06
+  },
+  {
+   "entry_date": "2024-05-27",
+   "entry": 1480.22,
+   "exit_date": "2024-06-03",
+   "exit": 1483.0,
+   "return_pct": -0.21,
+   "exit_reason": "EMA 10/30 cross down",
+   "initial_stop": 1398.03
+  },
+  {
+   "entry_date": "2024-06-11",
+   "entry": 1469.0,
+   "exit_date": "2024-07-23",
+   "exit": 1489.3,
+   "return_pct": 0.98,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1359.3
+  },
+  {
+   "entry_date": "2024-08-30",
+   "entry": 1534.0,
+   "exit_date": "2024-09-09",
+   "exit": 1466.5,
+   "return_pct": -4.8,
+   "exit_reason": "EMA 10/30 cross down",
+   "initial_stop": 1453.7
+  },
+  {
+   "entry_date": "2024-09-30",
+   "entry": 1519.4,
+   "exit_date": "2024-09-30",
+   "exit": 1480.2,
+   "return_pct": -2.98,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1480.2
+  },
+  {
+   "entry_date": "2025-09-19",
+   "entry": 1414.9,
+   "exit_date": "2025-09-23",
+   "exit": 1378.25,
+   "return_pct": -2.99,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1378.25
+  },
+  {
+   "entry_date": "2025-10-20",
+   "entry": 1440.0,
+   "exit_date": "2025-12-04",
+   "exit": 1518.73,
+   "return_pct": 5.07,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1378.73
+  }
+ ],
+ "cost_assumption": "20 bps per position change",
+ "trail_points": 10.0
+}

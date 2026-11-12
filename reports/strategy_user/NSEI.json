@@ -1,0 +1,143 @@
+{
+ "period": "2021-11-01 to 2026-10-29",
+ "trades": 14,
+ "win_rate_pct": 35.7,
+ "time_in_market_pct": 11.0,
+ "strategy_after_costs": {
+  "total_return_pct": 1.3,
+  "cagr_pct": 0.3,
+  "sharpe": 0.1,
+  "sortino": 0.06,
+  "max_drawdown_pct": -8.4
+ },
+ "trade_log": [
+  {
+   "entry_date": "2022-01-05",
+   "entry": 17820.1,
+   "exit_date": "2022-01-06",
+   "exit": 17860.42,
+   "return_pct": -0.17,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 17740.42
+  },
+  {
+   "entry_date": "2022-10-21",
+   "entry": 17622.85,
+   "exit_date": "2022-12-12",
+   "exit": 18378.26,
+   "return_pct": 3.89,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 17118.26
+  },
+  {
+   "entry_date": "2023-04-12",
+   "entry": 17759.55,
+   "exit_date": "2023-04-17",
+   "exit": 17657.82,
+   "return_pct": -0.97,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 17577.82
+  },
+  {
+   "entry_date": "2023-09-06",
+   "entry": 19581.2,
+   "exit_date": "2023-09-21",
+   "exit": 19863.65,
+   "return_pct": 1.04,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 19223.65
+  },
+  {
+   "entry_date": "2023-10-12",
+   "entry": 19822.7,
+   "exit_date": "2023-10-23",
+   "exit": 19500.5,
+   "return_pct": -2.03,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 19480.5
+  },
+  {
+   "entry_date": "2023-11-17",
+   "entry": 19674.75,
+   "exit_date": "2023-12-20",
+   "exit": 21159.45,
+   "return_pct": 7.15,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 19329.45
+  },
+  {
+   "entry_date": "2024-05-22",
+   "entry": 22576.6,
+   "exit_date": "2024-05-30",
+   "exit": 22584.55,
+   "return_pct": -0.36,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 22054.55
+  },
+  {
+   "entry_date": "2024-12-06",
+   "entry": 24729.45,
+   "exit_date": "2024-12-19",
+   "exit": 23933.35,
+   "return_pct": -3.62,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 23873.35
+  },
+  {
+   "entry_date": "2025-03-24",
+   "entry": 23515.4,
+   "exit_date": "2025-03-26",
+   "exit": 23743.16,
+   "return_pct": 0.57,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 23393.16
+  },
+  {
+   "entry_date": "2025-04-17",
+   "entry": 23401.85,
+   "exit_date": "2025-04-17",
+   "exit": 23357.9,
+   "return_pct": -0.59,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 23357.9
+  },
+  {
+   "entry_date": "2025-08-26",
+   "entry": 24899.5,
+   "exit_date": "2025-08-28",
+   "exit": 24695.8,
+   "return_pct": -1.22,
+   "exit_reason": "EMA 10/30 cross down",
+   "initial_stop": 24337.5
+  },
+  {
+   "entry_date": "2025-09-12",
+   "entry": 25074.45,
+   "exit_date": "2025-09-26",
+   "exit": 24774.7,
+   "return_pct": -1.6,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 24404.7
+  },
+  {
+   "entry_date": "2025-10-08",
+   "entry": 25079.75,
+   "exit_date": "2025-11-04",
+   "exit": 25607.7,
+   "return_pct": 1.71,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 24587.7
+  },
+  {
+   "entry_date": "2026-02-12",
+   "entry": 25906.7,
+   "exit_date": "2026-02-13",
+   "exit": 25491.9,
+   "return_pct": -2.0,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 25491.9
+  }
+ ],
+ "cost_assumption": "20 bps per position change",
+ "trail_points": 10.0
+}

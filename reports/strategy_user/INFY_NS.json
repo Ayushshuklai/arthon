@@ -1,0 +1,89 @@
+{
+ "period": "2021-11-01 to 2026-10-29",
+ "trades": 8,
+ "win_rate_pct": 25.0,
+ "time_in_market_pct": 4.0,
+ "strategy_after_costs": {
+  "total_return_pct": -15.5,
+  "cagr_pct": -3.4,
+  "sharpe": -0.69,
+  "sortino": -0.21,
+  "max_drawdown_pct": -15.5
+ },
+ "trade_log": [
+  {
+   "entry_date": "2021-12-03",
+   "entry": 1771.1,
+   "exit_date": "2021-12-06",
+   "exit": 1716.92,
+   "return_pct": -3.46,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1706.92
+  },
+  {
+   "entry_date": "2021-12-09",
+   "entry": 1759.0,
+   "exit_date": "2021-12-14",
+   "exit": 1717.59,
+   "return_pct": -2.75,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1707.59
+  },
+  {
+   "entry_date": "2022-03-11",
+   "entry": 1814.0,
+   "exit_date": "2022-03-21",
+   "exit": 1842.04,
+   "return_pct": 1.15,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1742.04
+  },
+  {
+   "entry_date": "2023-01-24",
+   "entry": 1560.0,
+   "exit_date": "2023-01-24",
+   "exit": 1552.35,
+   "return_pct": -0.89,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1552.35
+  },
+  {
+   "entry_date": "2023-11-22",
+   "entry": 1436.2,
+   "exit_date": "2023-11-24",
+   "exit": 1450.58,
+   "return_pct": 0.6,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1420.58
+  },
+  {
+   "entry_date": "2024-06-10",
+   "entry": 1525.3,
+   "exit_date": "2024-06-12",
+   "exit": 1493.48,
+   "return_pct": -2.49,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1493.48
+  },
+  {
+   "entry_date": "2024-11-27",
+   "entry": 1930.1,
+   "exit_date": "2024-12-24",
+   "exit": 1865.0,
+   "return_pct": -3.77,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1795.0
+  },
+  {
+   "entry_date": "2025-01-03",
+   "entry": 1952.95,
+   "exit_date": "2025-01-17",
+   "exit": 1865.05,
+   "return_pct": -4.9,
+   "exit_reason": "Stop loss / trailing stop",
+   "initial_stop": 1845.05
+  }
+ ],
+ "cost_assumption": "20 bps per position change",
+ "trail_points": 10.0
+}
