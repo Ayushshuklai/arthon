@@ -1,0 +1,61 @@
+// © Ayushshuklai — Arthon (open-source, educational)
+//@version=5
+indicator("Arthon — EMA Agents + Swing Stop [Ayush]", overlay=true, max_lines_count=500, max_labels_count=500)
+
+// ── Inputs ──────────────────────────────────────────────────────────────
+lenFast   = input.int(10,  "Fast EMA")
+lenSlow   = input.int(30,  "Slow EMA")
+lenRegime = input.int(200, "Regime EMA (200)")
+trailPts  = input.float(10.0, "Trailing stop step (points)")
+
+// ── EMAs ────────────────────────────────────────────────────────────────
+emaF = ta.ema(close, lenFast)
+emaS = ta.ema(close, lenSlow)
+emaR = ta.ema(close, lenRegime)
+plot(emaF, "EMA 10",  color.new(color.aqua, 0), 2)
+plot(emaS, "EMA 30",  color.new(color.orange, 0), 2)
+plot(emaR, "EMA 200", color.new(color.fuchsia, 0), 2)
+bgcolor(emaF > emaS ? color.new(color.green, 93) : color.new(color.red, 93))
+
+// ── Swing low (fractal, confirmed 2 bars later — non-repainting) ───────
+swingLow  = ta.pivotlow(low, 2, 2)
+lastSwing = ta.valuewhen(not na(swingLow), swingLow, 0)
+
+// ── Strategy state (indicator mirror of the Python backtest) ──────────
+var float entryPrice = na
+var float stopPrice  = na
+var float highest    = na
+var int   trailSteps = 0
+inTrade = not na(entryPrice)
+
+crossUp = ta.crossover(emaF, emaS)
+crossDn = ta.crossunder(emaF, emaS)
+
+if not inTrade and crossUp
+    candidateStop = math.max(nz(lastSwing, na), emaR)
+    if not na(candidateStop) and candidateStop < close
+        entryPrice := close
+        stopPrice  := candidateStop
+        highest    := high
+        trailSteps := 0
+        label.new(bar_index, low, "BUY\n10/30 cross", style=label.style_label_up, color=color.new(color.green, 0), textcolor=color.white, size=size.small)
+
+if inTrade
+    highest := math.max(highest, high)
+    steps = int(math.floor((highest - entryPrice) / trailPts))
+    if steps > trailSteps
+        stopPrice  := math.max(stopPrice, nz(lastSwing, stopPrice) + trailPts * steps)
+        trailSteps := steps
+    stopHit = low <= stopPrice
+    if stopHit or crossDn
+        label.new(bar_index, high, stopHit ? "STOP" : "SELL\ncross down", style=label.style_label_down, color=color.new(color.red, 0), textcolor=color.white, size=size.small)
+        entryPrice := na
+        stopPrice  := na
+
+plot(inTrade ? stopPrice : na, "Trailing stop", color.new(color.red, 0), 2, plot.style_linebr)
+
+// ── Honest note ─────────────────────────────────────────────────────────
+// This indicator mirrors the open-source Python backtest in
+// github.com/Ayushshuklai/arthon — including its published,
+// cost-adjusted results (good and bad). A chart projection is not a
+// prediction and this is not financial advice.
