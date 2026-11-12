@@ -1,4 +1,4 @@
-# Finance AI — Analysis Report: AAPL
+# Arthon — Analysis Report: AAPL
 
 - **Analysis date:** 2026-10-30
 - **Data range:** 2024-10-31 to 2026-10-30 (501 sessions)

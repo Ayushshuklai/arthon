@@ -1,4 +1,4 @@
-# Finance AI — Analysis Report: MAZDOCK.NS
+# Arthon — Analysis Report: MAZDOCK.NS
 
 - **Analysis date:** 2026-10-30
 - **Data range:** 2024-10-30 to 2026-10-29 (495 sessions)
