@@ -17,6 +17,18 @@ Built by Ayush Shukla with eider (Muse). The *idea* of a multi-agent
 research team was inspired by TradingAgents, Kronos and ai-hedge-fund from
 the author's starred collection; all code in this repository is original.
 
+## Why this exists
+
+Most finance-AI projects are US-market, need a paid LLM API key, and
+backtest as if trading were free. This one is built for Indian researchers
+first: it runs on NSE/BSE tickers in INR with no API key, charges realistic
+asset- and broker-aware costs (STT and brokerage schedules differ per asset
+class), and evaluates its own forecast walk-forward in every report —
+publishing the measured accuracy even when it is bad. It is a learning
+reference a student can clone and understand in an afternoon, and an honest
+one: the Fundamentals agent scores neutral and says data is unavailable
+rather than inventing financials.
+
 ![NIFTY forecast cone](docs/images/nifty_cone.png)
 
 *The pattern engine on NIFTY: a historical-analogue forecast cone — the range
